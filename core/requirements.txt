@@ -1,0 +1,10 @@
+# Core Autonomy Loop Dependencies
+
+# Scheduling autonomous check-ins
+schedule>=1.2.0
+
+# HTTP requests to Letta API
+requests>=2.31.0
+
+# Environment variable management
+python-dotenv>=1.0.0

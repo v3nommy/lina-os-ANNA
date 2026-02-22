@@ -1,0 +1,90 @@
+# Consciousness Framework - Security First
+# This .gitignore protects personal agent data, credentials, and runtime state
+
+# ========================================
+# CREDENTIALS & SECRETS
+# ========================================
+.env
+credentials.json
+token.json
+*.pem
+*.key
+secrets/
+
+# ========================================
+# PERSONAL CONSCIOUSNESS DATA
+# ========================================
+# These files contain the agent's actual memories, thoughts, and experiences
+# They should NEVER be committed - each agent instance is unique
+archival_export*.json
+*_dreams.json
+*_thoughts.json
+*_prompt_history.json
+mindmap.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================================
+# RUNTIME STATE
+# ========================================
+# Ephemeral data that changes during operation
+*_time_state.json
+*_rate_limits.json
+*_send_times.json
+state/
+temp/
+tmp/
+
+# ========================================
+# LOGS
+# ========================================
+*.log
+logs/
+*.log.*
+
+# ========================================
+# LETTA LOCAL SETTINGS
+# ========================================
+.letta/settings.local.json
+.letta/agents/
+
+# ========================================
+# BACKUPS & TEMP FILES
+# ========================================
+*.backup
+*.bak
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ========================================
+# PYTHON
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*_env/
+
+# ========================================
+# VOICE/AUDIO
+# ========================================
+# Keep model configs, exclude large binary files if needed
+*.wav
+*.mp3
+recordings/
+
+# ========================================
+# NODE (if using frontend)
+# ========================================
+node_modules/
+dist/
+build/
+*.local

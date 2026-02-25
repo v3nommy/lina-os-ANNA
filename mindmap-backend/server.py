@@ -112,7 +112,7 @@ def connect():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-@app.route', methods=['GET'])
+@app.route('/navigate/<node_id>', methods=['GET'])
 def navigate(node_id):
     """Navigate to a node and see all connections"""
     try:

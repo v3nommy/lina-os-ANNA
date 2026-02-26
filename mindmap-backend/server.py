@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Initialize database
-DB_PATH = os.environ.get('MINDMAP_DB_PATH', '/tmp/mindmap.db')
+DB_PATH = os.environ.get('MINDMAP_DB_PATH', './mindmap.db')
 db = MindMapDB(DB_PATH)
 
 @app.route('/health', methods=['GET'])
